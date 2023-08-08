@@ -1,0 +1,99 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100% ;
+    z-index: 1;
+    justify-content: center;
+    width: 120px;
+    align-items: center;
+    top: 0;
+}
+
+
+
+.sidebar__logo {
+    display: flex;
+    position: fixed ;
+    top: 0;
+    left: 1rem;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.sidebar__logo > img {
+    width: 51px;
+    height:34px;
+    margin-top: 1.5rem;
+}
+.sidebar__logo > button {
+    font-size: 12px;
+    width: 80px;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: goldenrod;
+    background: transparent;
+    background-color:rgba(218, 165, 32,0.2);
+    
+}
+
+.sidebar__icons > * {
+    margin-top: 2.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+   
+
+}
+
+
+.sidebar__icons {
+    position: fixed;
+    top: 6rem;
+    left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    transition: transform 0.3s;
+    padding: 0;
+
+   
+}
+
+.sidebar__icons:hover {
+    width: 120px;
+    transition:  0.1s ease-in-out;
+    transform-origin: center;
+}
+
+
+.icons {
+     display: flex;
+     width: 100%;
+     color: gray;
+     transition: transform 0.1s;
+     cursor: pointer;
+}
+
+span {
+    margin-left: 1rem;
+    white-space: nowrap;
+    font-family: sans-serif;
+    
+    
+}
+.icons:hover {
+    color: #fff !important;
+    transform-origin: left top;
+    transform: scale(1.08) ;
+    
+    
+}
+
+

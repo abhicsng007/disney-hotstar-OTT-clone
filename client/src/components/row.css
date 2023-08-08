@@ -1,0 +1,132 @@
+.row {
+    margin-left: 120px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: visible;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+
+.card {
+    
+    display: flex;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    gap: 0.5rem;
+    
+    
+  
+}
+
+
+.card::-webkit-scrollbar {
+    display: none;
+}
+
+
+.card__gradient {
+    height: 230px;
+    width: 170px ;
+    object-fit: contain;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    transition: 0.5s transform;
+    align-items: center;
+    flex: 0 0 auto;
+    padding: 0;
+    
+    
+   
+    
+}
+
+/* .card__container::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to right ,
+    transparent,
+    rgba(37,37,37,0.2),
+    #111);
+    pointer-events: none;
+    
+} */
+
+.card__container2::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom ,
+    transparent,
+    rgba(37,37,37,0.2),
+    #111);
+    pointer-events: none;
+    
+    
+}
+
+.card__container {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+   
+    
+}
+
+.card__container2 {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    cursor: pointer;
+   
+    
+}
+
+.card__buttons {
+    display: flex;
+    position: absolute;
+    top:80%;
+    left: 10%;
+   
+}
+.card__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    
+   
+    
+}
+
+.card__gradient:hover {
+    transform: scaleX(1.6) scaleY(1.3);
+    z-index: 2;
+   
+}
+
+.card__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+
+h2 {
+    color: white;
+}
+
+
+
+

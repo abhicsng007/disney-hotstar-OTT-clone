@@ -1,0 +1,93 @@
+.banner {
+    position: relative;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    max-height: 100%;
+    height: 460px;
+    object-fit: cover;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+  }
+  
+  .banner__gradient-overlay {
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        -90deg,
+        transparent,
+        rgba(37,37,37,0.5),
+        #111
+    );
+    
+  }
+  
+  .banner__details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-left: 10rem;
+  }
+
+  .banner__details > h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner__details > h2 {
+    font-size: 1rem;
+  }
+ 
+  .banner__subdetails {
+    display: flex;
+    margin-bottom: 1rem;
+   
+  }
+  
+  .banner__subdetails > h2{
+    font-size: 1rem;
+  }
+
+  .banner__buttons {
+    display: flex;
+  }
+
+  .banner__buttons > button{
+    height: 3rem;
+    width: 20rem;
+    margin-right: 1rem;
+    color: white;
+    text-align: center;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+   
+    
+  }
+
+  .banner__buttons .plus__button {
+    position: relative;
+    width:3rem;
+    font-size: 2rem;
+    color: #fff;
+    border: none;
+    font-weight: lighter;
+    cursor: pointer;
+    font-family: "Sans-Serif";
+  }
+  
+  .banner__buttons>button:hover {
+    background-color: rgba(128, 128, 128, 0.8) ;
+    transform: scale(1.02) !important;
+    transition: transform 0.5s;
+  }
+
+
