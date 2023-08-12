@@ -1,6 +1,6 @@
 # Disney+hotstar OTT clone
 
-This a disney+hotstar clone made with react.js,node.js,express.js and MongoDB.Used tmdb API for fetching movie data. UI is designed using react.js. Login/Register functionality is implemented using node/express and MongoDB.Icons are used from fontawesome.Currently working on adding more functionalities including a recommendation system.
+This a disney+hotstar clone made with react.js,node.js,express.js and MongoDB.Used tmdb API for fetching movie data. UI is designed using react.js. Login/Register functionality is implemented using node/express and MongoDB.Icons are used from fontawesome.Currently working on adding more functionalities.
 
 ## Installation
 
