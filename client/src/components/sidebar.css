@@ -68,7 +68,7 @@
 
 .sidebar__icons:hover {
     width: 120px;
-    transition:  0.1s ease-in-out;
+    transition:  0.4s width;
     transform-origin: center;
 }
 
@@ -77,7 +77,6 @@
      display: flex;
      width: 100%;
      color: gray;
-     transition: transform 0.1s;
      cursor: pointer;
 }
 
@@ -92,6 +91,7 @@ span {
     color: #fff !important;
     transform-origin: left top;
     transform: scale(1.08) ;
+    transition: transform 0.4s;
     
     
 }

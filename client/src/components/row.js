@@ -34,7 +34,7 @@ function Row({title,fetch_Url}) {
     }
     fetchData();
   },[fetch_Url]);
-  console.log(movies);
+  
 
   function truncate(string,n){
     return string?.length > n ? string.substr(0,n-1)+ '...' : string;

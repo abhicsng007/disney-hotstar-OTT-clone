@@ -1,6 +1,7 @@
 const express = require('express');
 const bcrypt  = require('bcrypt');
 const User = require('../models/User');
+const {spawn} = require('child_process');
 
 const router = express.Router();
 
@@ -50,5 +51,41 @@ router.post('/login',async (req,res) => {
     }
 
 });
+
+// router.post('/search',(req,res) => {
+//     const movieTitle = req.body.movieTitle;
+//     const pythonProcess = spawn('python',['../api/mlmodel/moviemodel.py',movieTitle]);
+    
+//     let outputData = '';
+//     let errorData = '';
+
+//     pythonProcess.stdout.on('data',(data)=>{
+//         outputData += data.toString();
+//         console.log('Python Process Output:', outputData);
+//     });
+//     pythonProcess.stderr.on('data',(data)=>{
+//         errorData += data.toString();
+//         console.log('Python Process Error Output:', errorData);
+//     });
+    
+  
+  
+//     pythonProcess.on('close',(code) =>{
+//         if(code===0) {
+//             try {
+//                 const recommendations = JSON.parse(outputData);
+//                 res.json({recommendations});
+//             } catch(error) {
+//                 res.status(500).json({ error: 'error parsing recommendations'});
+//             }
+//         }
+//         else {
+//             console.log('Python Process Exit Code:', code);
+//             res.status(500).json({ error: 'error running python script'});
+
+//         }
+//     });
+
+// });
 
 module.exports = router;

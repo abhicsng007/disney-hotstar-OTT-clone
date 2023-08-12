@@ -25,12 +25,12 @@ function Sidebar() {
          <button className='sidebar__button'>Subscribe &gt; </button>
        </div>
        <div className='sidebar__icons' onMouseEnter={handleOnhover} onMouseLeave={handleOnhover}>
-          <div className='icons' onClick={()=>navigate('/login')}><i class="fa-regular fa-user" ></i><span>My Space</span></div>
-          <div className='icons'><i class="fa-solid fa-magnifying-glass" ></i><span>Search</span></div>
+          <div className='icons' onClick={()=>navigate('/login')}><i className="fa-regular fa-user" ></i><span>My Space</span></div>
+          <div className='icons'  onClick={()=>navigate('/search')}><i className="fa-solid fa-magnifying-glass" ></i><span>Search</span></div>
           <div className='icons' onClick={()=>navigate('/')}><i class="fa-solid fa-house" ></i><span>Home</span></div>
-          <div className='icons'><i class="fa-solid fa-tv" ></i><span>TV</span></div>
-          <div className='icons'><i class="fa-solid fa-film" ></i><span>Movies</span></div>
-          <div className='icons'><i class="fa-solid fa-volleyball" ></i><span>Sports</span></div>
+          <div className='icons'><i className="fa-solid fa-tv" ></i><span>TV</span></div>
+          <div className='icons'><i className="fa-solid fa-film" ></i><span>Movies</span></div>
+          <div className='icons'><i className="fa-solid fa-volleyball" ></i><span>Sports</span></div>
         </div> 
        
     </div> 

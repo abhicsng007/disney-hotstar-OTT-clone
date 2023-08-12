@@ -22,8 +22,8 @@
 }
 
 
-.card::-webkit-scrollbar {
-    display: none;
+.row::-webkit-scrollbar {
+    display: none ;
 }
 
 
