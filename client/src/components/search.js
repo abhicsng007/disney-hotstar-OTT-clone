@@ -8,7 +8,7 @@ import axios from 'axios';
 
 function Search() {
   const [searchTerm, setSearchTerm] = useState();
-  const API_KEY = "75c96f1193d4be72246c9389e7bec800";
+  const API_KEY = "";
   const URL = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${searchTerm}`; 
   
   const handleSearch = async (e) => {
